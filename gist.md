@@ -17,8 +17,8 @@ Matching an Email: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
-- [Flags](#flags)
 - [Character Escapes](#character-escapes)
+- [Author](#author)
 
 ## Regex Components
 
@@ -56,10 +56,18 @@ Character classes are nestled inside a bracket expression [ ]. They are componen
 
 ### The OR Operator
 
-### Flags
+The OR operator is not found in our example email expression, but it is denoted by the symbol `|`. This operator to match characters or expressions on either side of the `|` but not both. For example, `1|4` will match EITHER 1 or 4 from the input string, but not both.
 
 ### Character Escapes
 
+Finally, we look at characters escapes. These help to 'escape' a character that would usually have special meaning inside an expression. The backslash `\` defines this, and the special character is prepended by the backslash. In our email regex, we can see that the backslash has been used to escape the period `\.` to ensure that the period is read as a general character, and not a special character as it is used in normal coding. 
+
+/^([a-z0-9_`\`.-]+)@([\da-z`\`.-]+)\.([a-z`\`.]{2,6})$/
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Amelia Hooper
+
+Amelia is a Biotechnology graduate currently working as a Laboratory Assistant. She is currently broadening her skillset by undertaking the Monash Coding Bootcamp to complete a certificate in full-stack development. 
+
+GitHub: [ahooper00](https://github.com/ahooper00)
